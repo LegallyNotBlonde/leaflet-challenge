@@ -58,7 +58,8 @@ L.geoJson(data, {
             <p>Magnitude: ${feature.properties.mag}</p>
             <p>Depth: ${feature.geometry.coordinates[2]} km</p>
             <p>Date & Time: ${new Date(feature.properties.time)}</p>`
-        );
+        ); // used <p> to display each detail in a separate line
+         // the data on the website used distance mesaured in 'km' (depth) 
     }
 }).addTo(myMap);
 
